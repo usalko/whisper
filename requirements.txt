@@ -1,0 +1,6 @@
+#pytest
+autopep8
+transformers
+datasets[audio]
+accelerate
+torch
