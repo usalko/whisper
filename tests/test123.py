@@ -29,4 +29,5 @@ pipe = pipeline(
 
 # result = pipe(sample, return_timestamps=True)
 result = pipe('./test_data/123.mp3', return_timestamps=True)
+# result = pipe('./test_data/amazing-story.mp3', return_timestamps=True)
 print(result["text"])
