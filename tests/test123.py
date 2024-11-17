@@ -5,7 +5,7 @@ from torch import cuda, float16, float32
 from transformers import AutoModelForSpeechSeq2Seq  # type: ignore
 from transformers import AutoProcessor, pipeline
 
-device = 'cpu' # 'cuda:0' if cuda.is_available() else 'cpu'
+device = 'cuda:0' if cuda.is_available() else 'cpu'
 torch_dtype = float16 if cuda.is_available() else float32
 
 model_id = 'openai/whisper-large-v3'
